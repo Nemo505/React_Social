@@ -22,6 +22,13 @@ export default function Rightbar() {
               </div>
                 <span className="rightbarUsername">Nemo</span>
           </li>
+          <li className="rightbarFriend">
+              <div className="rightbarFriendContainer">
+                <img src="assets/maple/wu2.jpg" className="rightbarFriendImg" alt="" />
+                <span className="rightbarOnline"></span>
+              </div>
+                <span className="rightbarUsername">Nemo</span>
+          </li>
         </ul>
 
       </div>
