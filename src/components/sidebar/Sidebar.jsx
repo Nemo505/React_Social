@@ -1,5 +1,7 @@
 import "./sidebar.css"
 import {DynamicFeed, Chat, VideoLibrary, Groups, BookmarkBorder, QuestionMark, WorkOutline, Event, Class} from '@mui/icons-material';
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Sidebar() {
   return (
@@ -57,22 +59,9 @@ export default function Sidebar() {
         <hr className="sidebarHr"/>
 
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="/assets/maple/leoWu1.jpg" alt="" />
-            <span className="sidebarFriendName">Nemo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="/assets/maple/leoWu1.jpg" alt="" />
-            <span className="sidebarFriendName">Nemo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="/assets/maple/leoWu1.jpg" alt="" />
-            <span className="sidebarFriendName">Nemo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="/assets/maple/leoWu1.jpg" alt="" />
-            <span className="sidebarFriendName">Nemo</span>
-          </li>
+          {Users.map((u) => (
+            <CloseFriend key={u.id} user={u}/>
+          ))}
         </ul>
 
       </div>

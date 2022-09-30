@@ -1,5 +1,7 @@
 import "./rightbar.css"
 import { Cake } from "@mui/icons-material";
+import { Users } from "../../dummyData";
+import Online from "../online/Online";
 
 export default function Rightbar() {
   return (
@@ -15,20 +17,9 @@ export default function Rightbar() {
         <h4 className="rightbarTitle">OnlineFriend</h4>
 
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-              <div className="rightbarFriendContainer">
-                <img src="assets/maple/wu2.jpg" className="rightbarFriendImg" alt="" />
-                <span className="rightbarOnline"></span>
-              </div>
-                <span className="rightbarUsername">Nemo</span>
-          </li>
-          <li className="rightbarFriend">
-              <div className="rightbarFriendContainer">
-                <img src="assets/maple/wu2.jpg" className="rightbarFriendImg" alt="" />
-                <span className="rightbarOnline"></span>
-              </div>
-                <span className="rightbarUsername">Nemo</span>
-          </li>
+          {Users.map((u)=>(
+            <Online key={u.id} user={u}/>
+          ))}
         </ul>
 
       </div>
