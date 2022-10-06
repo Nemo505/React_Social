@@ -12,11 +12,23 @@ export default function Profile() {
           <Sidebar/>
           <div className="profileRight">
             <div className="profileRightTop">
-              <div className="profileRightBottom">
-                <Feed/>
-                <Rightbar/>
+
+              <div className="profileCover">
+                <img className="profileCoverImg" src="assets/maple/wu3.jpg" alt="" />
+                <img className="profileUserImg" src="assets/maple/wu2.jpg" alt="" />
+              </div>
+
+              <div className="profileInfo">
+                  <h4 className="profileInfoName">Nemo</h4>
+                  <span className="profileInfoDesc">Hong</span>
               </div>
             </div>
+
+            <div className="profileRightBottom">
+              <Feed/>
+              <Rightbar/>
+            </div>
+
           </div>
         </div>
 

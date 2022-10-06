@@ -1,8 +1,7 @@
 import "./share.css"
 import {Subscriptions, Label, LocationOn, MoodOutlined} from '@mui/icons-material';
 
-export default function 
-() {
+export default function Share() {
   return (
     <div className="share">
         <div className="shareWrapper">
