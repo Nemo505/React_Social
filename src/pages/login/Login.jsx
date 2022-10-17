@@ -10,7 +10,15 @@ export default function Login() {
                     Connect With people around the World
                 </span>
             </div>
-            <div className="loginRight"></div>
+            <div className="loginRight">
+              <div className="loginBox">
+                <input type="Email" className="loginInput" />
+                <input type="Password" className="loginInput" />
+                <button className="loginButton">Log In</button>
+                <span className="loginForgot">Forgot Password?</span>
+                <button className="loginRegisterButton">Create New Account</button>
+              </div>
+            </div>
         </div>
     </div>
   )
